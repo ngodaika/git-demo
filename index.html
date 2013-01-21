@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis"/>
+
+<title>jQuery Tab</title>
+
+
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/tab.css" type="text/css" media="screen" />
+
+  <script src="js/jquery.1.4.2.js" type="text/javascript"></script>
+	<script src="js/tab_change.js" type="text/javascript"></script>
+	<script src="js/tabpane.js" type="text/javascript"></script>
+	<script src="js/topics.js" type="text/javascript"></script>
+	<script src="js/campaign.js" type="text/javascript"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/release.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div id="content">
+	<div id="tabPane1" class="tab-pane">
+		<script type="text/javascript">
+				tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
+				tab_campaign();
+				tab_topics();
+				tab_release();
+		</script>
+		<noscript>
+		<div class="no_script">aaaa
+			<img src="img/campaign_on.gif" class="tab_img" alt="キャンペーン情報" title="キャンペーン情報" width="204" height="37" />
+		</div>
+		<div class="more"><a href="#">キャンペーン情報一覧をみる</a></div>
+		<div class="no_script">
+			<img src="img/topics_on.gif" class="tab_img" alt="最新情報" title="最新情報" width="203" height="37" />
+		</div>
+		<div class="more"><a href="#">更新履歴一覧をみる</a></div>
+		<div class="no_script">
+			<img src="img/release_on.gif" class="tab_img" alt="ニュースリリース" title="ニュースリリース" width="203" height="37" />
+		</div>
+		<div class="more"><a href="#">ニュースリリース一覧をみる</a></div>
+		</noscript>
+	</div>
+	</div>
+</body>
+</html>
